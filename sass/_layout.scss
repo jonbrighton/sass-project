@@ -13,7 +13,7 @@ footer {
 
 .wrapper {
 
-  padding: 1em 0;
+
   background: #ffffff;
 }
 h2, p {
@@ -86,73 +86,95 @@ img {
   position: relative;
   z-index: 1000;
 }
+.health h2,
+.health h3,
+.health p,
+.organization h2,
+.organization h3,
+.organization p,
+.agriculture h2,
+.agriculture h3,
+.agriculture p,
+.money h2,
+.money h3,
+.money p {
+  padding-left: 7%;
+  padding-right: 7%;
+}
 .side {
 
-  background-color: #27333f;
+  background-color: #EDED51;
   min-height: 100vh;
-  width: 400px;
+  width: 193px;
   opacity: 0.1;
   position: absolute;
   top:0;
   right:0;
+  margin: 0;
 }
 .side h2, .side h3 {
-  transform: rotate(90deg);
-  // position: absolute;
-  // top: 250px;
 
-  padding-left: 300px;
-  font-size: 80px;
-  color: rgba(237, 237, 81, 0.9);
-  text-align: center;
-  margin:0;
+  opacity: 0;
 }
-.side h3 {
-  top: 300px;
-  font-size: 45px;
 
-  color:#FA8072;
-
-}
 .description-box h2{
 padding-top: 100px;
+margin: 0;
 }
 
 .side2 h2, .side2 h3 {
-  transform: rotate(-90deg);
-  // position: absolute;
-  // top: 250px;
-  // left: 0;
-  padding-top: 20px;
-  padding-left: 00px;
-  font-size: 80px;
-  color: rgba(229, 230, 232, 0.8);
+  color: rgba(229, 230, 232, 0.9);
   text-align: center;
+  opacity: 0;
 }
-.side2 h3 {
-  top: 300px;
-  font-size: 45px;
 
-  color:#FA8072;
-
-}
 .side2 {
 
-  background-color: #27333f;
+  background-color: #57EAB9;
   min-height: 100vh;
-  width: 400px;
-  opacity: 0.5;
+  width: 193px;
+  // opacity: 0.5;
   position: absolute;
   top:0;
   left:0;
+  opacity: 0.1;
 }
 .agriculture {
   min-height: 100vh;
   position: relative;
 }
 .description-box2 h2{
-padding-top: 200px;
+padding-top: 100px;
+margin: 0;
 }
+
+// health
+.health{
+  min-height: 100vh;
+  position: relative;
+}
+.side3 h2, .side3 h3 {
+  color: rgba(229, 230, 232, 0.9);
+  text-align: center;
+  opacity: 0;
+}
+.side3 {
+
+  background-color: #EA6E6E ;
+  min-height: 100vh;
+  width: 193px;
+  opacity: 0.1;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.description-box3 h2{
+padding-top: 100px;
+margin: 0;
+}
+
+
+
 @media screen and (min-width:48em) {
   .opening {
     min-height: 100vh;
@@ -204,6 +226,8 @@ padding-top: 200px;
     height: auto;
 
   }
+
+// .money----------------------------------
   .money {
     background-image: url(../images/background-project.svg);
     background-repeat: no-repeat;
@@ -238,6 +262,7 @@ padding-top: 200px;
     color: rgba(229, 230, 232, 0.8);
     text-align: center;
     margin:0;
+    opacity: 0.9;
   }
   .side h3 {
     top: 300px;
@@ -246,12 +271,14 @@ padding-top: 200px;
     color:#FA8072;
 
   }
+  // .agriculture-------------------------
   .side2 h2, .side2 h3 {
     transform: rotate(90deg);
     padding-left: 100px;
     font-size: 100px;
     color: rgba(229, 230, 232, 0.8);
     text-align: center;
+    opacity: 0.9;
   }
   .side2 h3 {
     top: 300px;
@@ -270,6 +297,7 @@ padding-top: 200px;
     top:0;
     left:0;
   }
+  // .health-----------------------
   .side3 {
 
     background-color: #27333f;
@@ -285,10 +313,11 @@ padding-top: 200px;
     transform: rotate(90deg);
 
     padding-left: 100px;
-margin:0;
+    margin:0;
     font-size: 100px;
     color: rgba(229, 230, 232, 0.8);
     text-align: center;
+    opacity:0.9;
   }
   .side3 h3 {
     top: 300px;
@@ -298,11 +327,9 @@ margin:0;
 
   }
   .side4 h2, .side4 h3 {
-    transform: rotate(-90deg);
-    position: absolute;
-    top: 250px;
-    left: 0;
-
+    transform: rotate(90deg);
+    // padding-top: 200px;
+    padding-left: 100px;
     font-size: 100px;
     color: rgba(229, 230, 232, 0.8);
     text-align: center;
@@ -337,6 +364,19 @@ margin:0;
     left: 28%;
     min-height: 100vh;
     width:600px;
+    margin:0;
+  }
+  .description-box2 h2 {
+    padding-top: 0;
+  }
+  .description-box h2 {
+    padding-top: 0;
+  }
+  .description-box3 h2 {
+    padding-top: 0;
+  }
+  .description-box4 h2 {
+    padding-top: 0;
   }
   .description-box3 {
     position:absolute;
