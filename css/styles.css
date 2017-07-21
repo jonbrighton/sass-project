@@ -32,26 +32,26 @@ svg {
   align-items: center;
   font-weight: bolder;
   text-align: center;
-  width: 400px;
+  width: 100%;
   height: 100vh;
   background: rgba(15, 15, 15, 0.8); }
 
 .box h2 {
   padding-top: 300px;
   text-align: center;
-  font-size: 40px;
+  font-size: 250%;
   line-height: 1.8;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
   color: #F4F5F5;
   margin: 0;
   font-family: 'Inconsolata', monospace; }
 
 .box h3 {
   padding-left: 23px;
-  padding-right: 10px;
+  padding-right: 5%;
   text-align: center;
-  font-size: 40px;
+  font-size: 260%;
   line-height: 1.8;
   color: #FA8072;
   margin: 0;
@@ -88,7 +88,7 @@ img {
 .side {
   background-color: #EDED51;
   min-height: 100vh;
-  width: 193px;
+  width: 50%;
   opacity: 0.1;
   position: absolute;
   top: 0;
@@ -110,7 +110,7 @@ img {
 .side2 {
   background-color: #57EAB9;
   min-height: 100vh;
-  width: 193px;
+  width: 50%;
   position: absolute;
   top: 0;
   left: 0;
@@ -136,13 +136,35 @@ img {
 .side3 {
   background-color: #ea6e6e;
   min-height: 100vh;
-  width: 193px;
+  width: 50%;
   opacity: 0.1;
   position: absolute;
   top: 0;
   right: 0; }
 
 .description-box3 h2 {
+  padding-top: 100px;
+  margin: 0; }
+
+.side4 h2, .side4 h3 {
+  color: rgba(229, 230, 232, 0.9);
+  text-align: center;
+  opacity: 0; }
+
+.side4 {
+  background-color: #57DADD;
+  min-height: 100vh;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1; }
+
+.organization {
+  min-height: 100vh;
+  position: relative; }
+
+.description-box4 h2 {
   padding-top: 100px;
   margin: 0; }
 
@@ -274,7 +296,8 @@ img {
     padding-left: 100px;
     font-size: 100px;
     color: rgba(229, 230, 232, 0.8);
-    text-align: center; }
+    text-align: center;
+    opacity: 0.9; }
 
   .side4 h3 {
     top: 300px;
@@ -388,6 +411,52 @@ img {
 
   .action:hover {
     background: #4e5256; } }
+.call {
+  background-image: url(../images/call-to-action.svg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.action {
+  margin-top: 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #FA8072;
+  border: 6px solid white;
+  box-shadow: .2px .2px .2px #888888; }
+
+.action h3 {
+  font-size: 350%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 10%; }
+
+a {
+  text-decoration: none; }
+
+.action h2 {
+  text-align: center;
+  padding-top: 40%;
+  font-size: 28px; }
+
+.action h2:hover {
+  color: #FA8072; }
+
+.action:hover {
+  background: #4e5256; }
+
+.checks {
+  text-align: center;
+  border-left: .5px solid black;
+  border-right: .5px solid black;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 50%; }
+
 body {
   color: #333333;
   font-size: 18px;

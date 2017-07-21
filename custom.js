@@ -243,10 +243,13 @@ const height = body.clientHeight
    console.log(percentage.toFixed())
    circle.style.top = percentage.toFixed() + '%'
    secondCircle.style.top = percentage.toFixed() + '%'
-   if (percentage <= 34) {
-     secondCircle.style.opacity = 1
-   } else if (percentage >= 34 && percentage <= 46) {
+  //  if (percentage <= 34) {
+  //    secondCircle.style.cssText = 'opacity:1; background-color:#EDED51;'
+   //
+  //  } else
+  if (percentage >= 34 && percentage <= 46) {
      secondCircle.style.opacity = 0
+    //  circle.style.cssText = 'background-color:#57EAB9;'
     //  secondCircle.style.backgroundColor = 'red'
     //  secondCircle.style.cssText = 'opacity:0; background-color:red;'
    } else if (percentage >= 46 && percentage <= 58) {
