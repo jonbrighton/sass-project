@@ -134,7 +134,7 @@ img {
   opacity: 0; }
 
 .side3 {
-  background-color: #ea6e6e;
+  background-color: #EA6E6E;
   min-height: 100vh;
   width: 50%;
   opacity: 0.1;
@@ -535,3 +535,5 @@ a {
 
 .twenty-percent {
   fill: brown; }
+
+/*# sourceMappingURL=styles.css.map */
